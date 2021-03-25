@@ -113,7 +113,7 @@ $(document).ready(function() {
   zs.clickLog.push([16, 4, Date.now()+1000]);
   zs.clickLog.push([14, 14, Date.now()+500]);
 
-  $("#scape").children().click(function() {
+  $("#scape").children().mousedown(function() {
     var click = new Array(3);
     click[0] = parseInt($(this).attr("class").split(/[- ]/)[0]);
     click[1] = parseInt($(this).attr("class").split(/[- ]/)[1]);
